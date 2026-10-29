@@ -48,17 +48,17 @@ document.addEventListener("DOMContentLoaded", () => {
   
   <!-- The Tall Pillar Capsule -->
   <div class="bg-amber-200 rounded-full overflow-hidden shadow-sm row-span-2 relative group">
-    <img src="public/cinnamon-latte.jpg" alt="Cozy Cafe Interior" class="w-full h-full object-cover ">
+    <img src="/cinnamon-latte.jpg" alt="Cozy Cafe Interior" class="w-full h-full object-cover ">
   </div>
 
   <!-- Top Curved Frame -->
   <div class="bg-amber-300 rounded-t-full rounded-br-full overflow-hidden shadow-sm relative group">
-    <img src="public/istockphoto-1256576728-612x612.jpg" alt="Fresh Baked Croissant" class="w-full h-full object-cover ">
+    <img src="/istockphoto-1256576728-612x612.jpg" alt="Fresh Baked Croissant" class="w-full h-full object-cover ">
   </div>
 
   <!-- Bottom Curved Frame -->
   <div class="bg-amber-400 rounded-b-full rounded-tl-full overflow-hidden shadow-sm relative group">
-    <img src="public/caremal .jpeg" alt="Pouring Latte Art" class="w-full h-full object-cover ">
+    <img src="/caremal .jpeg" alt="Pouring Latte Art" class="w-full h-full object-cover ">
   </div>
 
 </div>
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 gap-4 rounded-2xl justify-between min-h-95" data-name="coffee drink latte espresso hot cinnamon vanilla morning" data-category="coffee">
         <h2 class="font-bold">Cinnamon Latte</h2>
         <img src="/cinnamon-latte.jpg" alt="Cinnamon Latte" class=" object-cover h-44 w-auto overflow-hidden border rounded-2xl m-1.5">
-        <p class="text-gray-600">Rich espresso paired with steamed milk, sweet vanilla syrup, and a heavy dash of ground cinnamon. (₹180)</p>
+        <p class="text-gray-600">Rich espresso paired with steamed milk, sweet vanilla syrup, and a heavy dash of ground cinnamon. </p>
         <h3>Price: 180</h3>
       </div>
 
@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 rounded-2xl justify-between min-h-95" data-name="coffee cappuccino espresso milk foam hot" data-category="coffee">
         <h2 class="font-bold">Classic Cappuccino</h2>
         <img src="/Classic Cappuccino.jpg" alt="Classic Cappuccino" class="h-44  object-cover w-auto overflow-hidden border rounded-2xl m-1.5">
-        <p class="text-gray-600">Rich espresso blended with steamed milk and topped with a thick layer of creamy milk foam. /p>
-        <h3>Price: ₹170< </h3>
+        <p class="text-gray-600">Rich espresso blended with steamed milk and topped with a thick layer of creamy milk foam. </p>
+        <h3>Price: ₹170 </h3>
       </div>
 
       <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 rounded-2xl justify-between min-h-95" data-name="coffee americano espresso black coffee hot bold" data-category="coffee">
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 rounded-2xl justify-between min-h-95" data-name="food pastry bake muffin cake almond nut sweet snack toast" data-category="snacks">
         <h2 class="font-bold">Toasted Almond Muffin</h2>
         <img src="/Toasted Almond Muffin.jpeg" alt="Toasted Almond Muffin" class="h-44 w-auto object-cover overflow-hidden border rounded-2xl m-1.5">
-        <p class="text-gray-600">A moist, classic vanilla muffin loaded with crunchy sliced almonds and a soft brown sugar crumble top. /p>
+        <p class="text-gray-600">A moist, classic vanilla muffin loaded with crunchy sliced almonds and a soft brown sugar crumble top. </p>
         <h3>Price: ₹130< </h3>
       </div>
 
