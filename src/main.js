@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
      
     <li>Home</li>
     <li><a href="#menu-search">Menu</a></li>
-    <li>About Us</li>
+    <li><a href="#about">About Us</a></li>
     <li>Contact Us</li>
     <li>Visit Us</li>
     </ul>
@@ -212,10 +212,10 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     <!---About section-->
 
-    <section id="about" class="w-full">
-    <div class="w-full max-w-6xl mt-8 flex flex-col gap-9 justify-center items-center ">
-    <h2 class="r text-2xl   font-semibold">About Us</h2>
-    <p class="leading-7 mx-auto max-w-3xl text-center">Honestly, we just wanted a place where nobody rushes you.
+    <section id="about" class="w-full max-w-6xl">
+    <div class="w-full max-w-6xl mt-10 flex flex-col gap-9 justify-center items-center ">
+    <h2 class=" text-2xl   font-semibold">About Us</h2>
+    <p class="leading-7 mx-auto max-w-3xl text-center ">Honestly, we just wanted a place where nobody rushes you.
 
     That's it. No "curated experience," no "elevated hospitality." Just a table, a cup of something warm, and enough time to actually finish your sentence before the next one starts.</p>
 
@@ -226,6 +226,61 @@ document.addEventListener("DOMContentLoaded", () => {
      <p class="leading-7 mx-auto max-w-3xl text-center">If you come in and we're busy, grab a seat anyway. We'll get to you.</p>
     </div>
     
+  
+</section>
+
+<!---visit us-->
+
+<section id="visit"  class="w-full max-w-6xl">
+  
+    
+<section id="visit" class="w-full">
+  <div class="mx-auto mt-10 w-full max-w-6xl px-6">
+
+    <h2 class="text-2xl font-semibold">Visit Us</h2>
+
+    <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+
+      <p class="leading-7">
+        The Warm Table<br>
+        12, Hindustan Road, Fort,<br>
+        Mumbai - 400001
+      </p>
+
+      <div>
+        <p class="mb-4 font-semibold">Getting here:</p>
+
+        <p class="mb-3">
+          By metro: Fort station (Line 1), 3-minute walk.
+        </p>
+
+        <p class="mb-3">
+          By local: Fort station (Central Line), same 3-minute walk.
+        </p>
+
+        <p>
+          By car: There's a small parking lot behind the building.
+          Ask the guard for "Hindustan Road, second gate."
+        </p>
+      </div>
+
+    </div>
+
+    <div class="mt-10 flex flex-col gap-4">
+      <h2 class="text-2xl font-semibold">Working Hours</h2>
+
+      <p>Open: 8 AM - 10 PM (all days)</p>
+
+      <p class="max-w-3xl leading-7">
+        We're on the ground floor of an old building near the
+        Crawford Market entrance. Look for the amber awning and
+        the smell of cardamom — you can't miss it.
+      </p>
+    </div>
+
+  </div>
+</section>
+
   
 </section>
   </main>
