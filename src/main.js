@@ -5,11 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
   <main class="min-h-screen bg-amber-50 flex flex-col justify-start items-center px-6 text-center">
 
     <!-- Navigation -->
-    <div class ="md:w-full mt-2 max-w-6xl flex bg-amber-100 sm:rounded-3xl md:mt-1 py-6 px-12 justify-around">
-    <button class=" md:hidden text-2xl" id="menuBtn">&#9776;</button>
+    <div class ="md:w-full mt-2 max-w-6xl flex-wrap bg-amber-100 rounded-3xl md:mt-1 py-6 px-12 md:justify-around">
+    <button class=" md:hidden  text-2xl " id="menuBtn">&#9776;</button>
     <nav >
-    <ul class=" hidden flex-col md:flex md:flex-row gap-4 md:gap-26 items-center w-full md:w-auto 
+    <ul class=" hidden flex-col md:flex md:flex-row gap-4 md:gap-28 items-center w-full md:w-auto 
       text-2xl" id="menu">
+     
     <li>Home</li>
     <li><a href="#menu-search">Menu</a></li>
     <li>About Us</li>
@@ -77,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <!-- Menu cards -->
     <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full max-w-6xl justify-center">
+   
 
       <!-- Coffee -->
 
@@ -208,6 +210,24 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
 
     </div>
+    <!---About section-->
+
+    <section id="about" class="w-full">
+    <div class="w-full max-w-6xl mt-8 flex flex-col gap-9 justify-center items-center ">
+    <h2 class="r text-2xl   font-semibold">About Us</h2>
+    <p class="leading-7 mx-auto max-w-3xl text-center">Honestly, we just wanted a place where nobody rushes you.
+
+    That's it. No "curated experience," no "elevated hospitality." Just a table, a cup of something warm, and enough time to actually finish your sentence before the next one starts.</p>
+
+    <p class="leading-7 mx-auto max-w-3xl text-center"> We call it The Warm Table because that's the whole point. You sit down, the chair's a little too comfortable, the coffee's a little too good, and suddenly it's been three hours and you don't even remember what you were doing before.
+
+    The pastries are made here every morning. The coffee is roasted in small batches because we can't afford to buy a lot at once and also because we like that it means we pay attention to every batch. The playlist is a mix of whatever we're into that week. The regulars are the best part.</p>
+
+     <p class="leading-7 mx-auto max-w-3xl text-center">If you come in and we're busy, grab a seat anyway. We'll get to you.</p>
+    </div>
+    
+  
+</section>
   </main>
   `;
 
@@ -216,6 +236,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   menuBtn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
+
+    if (menu.classList.contains("hidden")) {
+      menuBtn.textContent = "☰";
+    } else {
+      menuBtn.textContent = "✕";
+    }
   });
 
   const menuGrid = document.querySelector("#menu-grid");
@@ -232,7 +258,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuContainer = document.createElement("div");
   menuContainer.className = "w-full max-w-6xl flex flex-col gap-12";
 
-  // Create a section for each category
   Object.entries(categoryNames).forEach(([category, title]) => {
     const categoryCards = menuCards.filter(
       (card) => card.dataset.category === category,
