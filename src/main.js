@@ -5,16 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
   <main class="min-h-screen bg-amber-50 flex flex-col justify-start items-center px-6 text-center">
 
     <!-- Navigation -->
-    <div class="w-full flex justify-center py-4 bg-amber-100">
-      <nav class="flex justify-between w-full px-10">
-        <p class="text-xl">Menu</p>
-        <p class="text-xl">About us</p>
-        <p class="text-xl">Home</p>
-        <p class="text-xl">Contact</p>
-        <p class="text-xl">Visit us</p>
-        <p class="text-xl">Follow us</p>
-      </nav>
+    <div class ="md:w-full mt-2 max-w-6xl flex bg-amber-100 sm:rounded-3xl md:mt-1 py-6 px-12 justify-around">
+    <button class=" md:hidden text-2xl" id="menuBtn">&#9776;</button>
+    <nav >
+    <ul class=" hidden flex-col md:flex md:flex-row gap-4 md:gap-26 items-center w-full md:w-auto 
+      text-2xl" id="menu">
+    <li>Home</li>
+    <li><a href="#menu-search">Menu</a></li>
+    <li>About Us</li>
+    <li>Contact Us</li>
+    <li>Visit Us</li>
+    </ul>
+    </nav>
     </div>
+    
 
     <!-- Brand name -->
     <div class="flex flex-col items-center mt-4 p-1.5 bg-amber-200 rounded-2xl">
@@ -76,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <!-- Coffee -->
 
-      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 rounded-2xl justify-between min-h-95" data-name="coffee drink latte espresso hot cinnamon vanilla morning" data-category="coffee">
+      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 gap-4 rounded-2xl justify-between min-h-95" data-name="coffee drink latte espresso hot cinnamon vanilla morning" data-category="coffee">
         <h2 class="font-bold">Cinnamon Latte</h2>
         <img src="/cinnamon-latte.jpg" alt="Cinnamon Latte" class=" object-cover h-44 w-auto overflow-hidden border rounded-2xl m-1.5">
         <p class="text-gray-600">Rich espresso paired with steamed milk, sweet vanilla syrup, and a heavy dash of ground cinnamon. (₹180)</p>
@@ -106,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <!-- Hot Chocolate -->
 
-      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 rounded-2xl justify-between min-h-95" data-name="chocolate drink cocoa hot hazelnut sweet dessert kids" data-category="hot-chocolate">
+      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 gap-4 rounded-2xl justify-between min-h-95" data-name="chocolate drink cocoa hot hazelnut sweet dessert kids" data-category="hot-chocolate">
         <h2 class="font-bold">Hazelnut Hot Chocolate</h2>
         <img src="/hazel nut.jpeg" alt="Hazelnut Hot Chocolate" class="h-44 w-auto object-cover overflow-hidden border rounded-2xl m-1.5">
         <p class="text-gray-600">Velvety melted chocolate infused with slow-toasted hazelnut syrup and topped with fluffy marshmallows. </p>
@@ -122,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <!-- Tea -->
 
-      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 rounded-2xl justify-between min-h-95" data-name="tea drink chamomile herbal hot honey calm sleep soothing" data-category="tea">
+      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 gap-4 rounded-2xl justify-between min-h-95" data-name="tea drink chamomile herbal hot honey calm sleep soothing" data-category="tea">
         <h2 class="font-bold">Honey Chamomile Tea</h2>
         <img src="/lemonn tea.jpeg" alt="Honey Chamomile Tea" class="h-44 w-auto object-cover overflow-hidden border rounded-2xl m-1.5">
         <p class="text-gray-600">Soothing organic chamomile blossoms steeped to perfection and served with a golden drizzle of raw local honey.</p>
@@ -152,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <!-- Snacks -->
 
-      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 rounded-2xl justify-between min-h-95" data-name="food pastry bake croissant butter bread breakfast morning warm" data-category="snacks">
+      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 gap-4 rounded-2xl justify-between min-h-95" data-name="food pastry bake croissant butter bread breakfast morning warm" data-category="snacks">
         <h2 class="font-bold">Warm Butter Croissant</h2>
         <img src="/istockphoto-1256576728-612x612.jpg" alt="Warm Butter Croissant" class="h-44 object-cover w-auto overflow-hidden border rounded-2xl m-1.5">
         <p class="text-gray-600">A flaky, golden-brown puff pastry baked fresh daily and served warm with a side of homemade berry jam. </p>
@@ -189,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <!-- Desserts -->
 
-      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 rounded-2xl justify-between min-h-95" data-name="dessert brownie chocolate fudge sweet cake" data-category="desserts">
+      <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 gap-4 rounded-2xl justify-between min-h-95" data-name="dessert brownie chocolate fudge sweet cake" data-category="desserts">
         <h2 class="font-bold">Chocolate Fudge Brownie</h2>
         <img src="/Chocolate Fudge Brownie.jpeg" alt="Chocolate Fudge Brownie" class="h-44 w-auto object-cover overflow-hidden border rounded-2xl m-1.5">
         <p class="text-gray-600">A rich, fudgy chocolate brownie with a soft centre and an indulgent cocoa flavour. </p>
@@ -206,6 +210,13 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   </main>
   `;
+
+  const menuBtn = document.querySelector("#menuBtn");
+  const menu = document.querySelector("#menu");
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
 
   const menuGrid = document.querySelector("#menu-grid");
   const menuCards = Array.from(menuGrid.querySelectorAll(".menu-card"));
