@@ -7,23 +7,23 @@ document.addEventListener("DOMContentLoaded", () => {
     <!-- Navigation -->
     <div class ="md:w-full mt-2 max-w-6xl flex-wrap bg-amber-100 rounded-3xl md:mt-1 py-6 px-12 md:justify-around">
     <button class=" md:hidden  text-2xl " id="menuBtn">&#9776;</button>
-    <nav >
-    <ul class=" hidden flex-col md:flex md:flex-row gap-4 md:gap-28 items-center w-full md:w-auto 
+    <nav class="w-full max-w-6xl">
+    <ul class=" hidden flex-col md:flex md:flex-row gap-4 md:gap-30 justify-center items-center w-full md:w-auto 
       text-2xl" id="menu">
      
-    <li>Home</li>
-    <li><a href="#menu-search">Menu</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li>Contact Us</li>
-    <li>Visit Us</li>
+    <li><a href="#home"  class="hover:text-amber-600 transition-colors ">Home</a></li>
+    <li><a href="#menu-search" class="hover:text-amber-600 transition-colors "> Menu</a></li>
+    <li><a href="#about" class="hover:text-amber-600 transition-colors " > About Us</a></li>
+    <li><a href="#contact" class="hover:text-amber-600 transition-colors "> Contact Us</a></li>
+    <li> <a href="#visit" class="hover:text-amber-600 transition-colors "> Visit Us</a></li>
     </ul>
     </nav>
     </div>
     
 
     <!-- Brand name -->
-    <div class="flex flex-col items-center mt-4 p-1.5 bg-amber-200 rounded-2xl">
-      <h1 class="text-3xl font-bold text-black p-4">
+    <div class="flex flex-col items-center mt-4 p-1.5 bg-amber-200 rounded-2xl" id="home">
+      <h1 class="text-3xl font-bold text-black p-4 font-['Playfair_Display',serif]">
         The Warm Table
       </h1>
     </div>
@@ -212,9 +212,9 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     <!---About section-->
 
-    <section id="about" class="w-full max-w-6xl">
-    <div class="w-full max-w-6xl mt-10 flex flex-col gap-9 justify-center items-center ">
-    <h2 class=" text-2xl   font-semibold">About Us</h2>
+    <section id="about" class="w-full max-w-6xl ">
+    <div class="w-full max-w-6xl mt-10 flex flex-col gap-9 justify-center items-center bg-amber-400 py rounded-2xl py-6 px-6 ">
+    <h2 class=" text-2xl   font-semibold font-serif">About Us</h2>
     <p class="leading-7 mx-auto max-w-3xl text-center ">Honestly, we just wanted a place where nobody rushes you.
 
     That's it. No "curated experience," no "elevated hospitality." Just a table, a cup of something warm, and enough time to actually finish your sentence before the next one starts.</p>
@@ -234,10 +234,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <section id="visit"  class="w-full max-w-6xl">
   
     
-<section id="visit" class="w-full">
-  <div class="mx-auto mt-10 w-full max-w-6xl px-6">
 
-    <h2 class="text-2xl font-semibold">Visit Us</h2>
+  <div class="mx-auto mt-10 w-full max-w-6xl  bg-amber-400 py rounded-2xl py-6 px-6 ">
+
+    <h2 class=" text-2xl   font-semibold font-serif">Visit Us</h2>
 
     <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
 
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     </div>
 
-    <div class="mt-10 flex flex-col gap-4">
+    <div class="mt-12 flex flex-col gap-4 text-center items-center w-full max-w-6xl">
       <h2 class="text-2xl font-semibold">Working Hours</h2>
 
       <p>Open: 8 AM - 10 PM (all days)</p>
@@ -281,8 +281,45 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </section>
 
+
+<footer id="footer" class="w-full  mx-auto mt-10 ">
+<div class="bg-amber-400 text-amber-50 p-8 text-center mx-auto w-full  flex flex-col gap-2 items-center rounded-t-2xl">
+  <div class="flex">
+  <nav class="flex">
+  <ul class="flex gap-1 md:gap-1.5 text-amber-600 text-xs md:text-sm"> 
+  <li><a href="#home">Home</a></li>
+    <li><a href="#menu-search">• Menu</a></li>
+    <li><a href="#about">• About Us</a></li>
+    <li><a href="#contact">• Contact Us</a></li>
+    <li> <a href="#visit">• Visit Us</a></li>
+    </ul>
+    </nav>
+    </div>
+  <p class="font-semibold font-serif text-amber-600 ">The Warm Table— Fort, Mumbai</p>
+  <p class=" text-amber-600 ">2 Hindustan Road, Fort, Mumbai</p>
+   <p class=" text-amber-600 ">8 AM - 10 PM, all days</p>
+  <p class=" text-amber-600 ">Follow us:</p>
+  <div class="flex items-center justify-center gap-2" id="contact">
+ <a href="https://instagram.com/thewarmtable.mum" target="_blank" class="inline-block mt-3">
+  <span class="inline-flex items-center justify-center h-8 w-8 rounded-full bg-amber-600">
+    <img src="/instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram" class="h-4 w-4">
+  </span>
+</a>
+  <a href="https://facebook.com/thewarmtable" target="_blank" class="inline-block mt-3">
+  <span class="inline-flex items-center justify-center h-8 w-8 rounded-full bg-amber-600">
+  <img src="/facebook-svgrepo-com.svg" alt="facebook" class="h-4 w-4 ">
+  </span>
+  </a>
   
-</section>
+  
+ </div>
+ <p class="text-amber-600 mt-4">© 2026 The Warm Table. All rights reserved.</p>
+</div>
+</footer>
+
+
+  
+
   </main>
   `;
 
