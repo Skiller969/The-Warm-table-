@@ -14,7 +14,7 @@ The website includes a hero section, an interactive menu, information about the 
 
 ### Desktop View
 
-![The Warm Table desktop homepage](screenshots/desktop.jpg)
+![The Warm Table desktop homepage](screenshots/desktop.png)
 
 ### Menu
 
@@ -22,7 +22,7 @@ The website includes a hero section, an interactive menu, information about the 
 
 ### Mobile View
 
-![The Warm Table mobile layout](screenshots/mobile.png)
+![The Warm Table mobile layout](screenshots/mobile.jpg)
 
 ## Features
 
