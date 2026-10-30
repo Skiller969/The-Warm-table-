@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <main class="min-h-screen bg-amber-50 flex flex-col justify-start items-center px-6 text-center">
 
     <!-- Navigation -->
-    <div class ="md:w-full mt-2 max-w-6xl flex-wrap bg-amber-100 rounded-3xl md:mt-1 py-6 px-12 md:justify-around">
+    <div class ="md:w-full mt-2 max-w-6xl flex flex-wrap bg-amber-100 rounded-3xl md:mt-1 py-6 px-12 md:justify-around">
     <button class=" md:hidden  text-2xl " id="menuBtn">&#9776;</button>
     <nav class="w-full max-w-6xl">
     <ul class=" hidden flex-col md:flex md:flex-row gap-4 md:gap-30 justify-center items-center w-full md:w-auto 
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2 class="font-bold">Toasted Almond Muffin</h2>
         <img src="/Toasted Almond Muffin.jpeg" alt="Toasted Almond Muffin" class="h-44 w-auto object-cover overflow-hidden border rounded-2xl m-1.5">
         <p class="text-gray-600">A moist, classic vanilla muffin loaded with crunchy sliced almonds and a soft brown sugar crumble top. </p>
-        <h3>Price: ₹130< </h3>
+        <h3>Price: ₹130 </h3>
       </div>
 
       <div class="menu-card bg-amber-100 flex flex-col py-6 px-4 rounded-2xl justify-between min-h-95" data-name="food sandwich grilled cheese bread lunch snack" data-category="snacks">
@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="bg-amber-400 text-amber-50 p-8 text-center mx-auto w-full  flex flex-col gap-2 items-center rounded-t-2xl">
   <div class="flex">
   <nav class="flex">
-  <ul class="flex gap-1 md:gap-1.5 text-amber-600 text-xs md:text-sm"> 
+  <ul class="flex gap-1.5 md:gap-1.5 text-amber-600 text-xs md:text-sm"> 
   <li><a href="#home">Home</a></li>
     <li><a href="#menu-search">• Menu</a></li>
     <li><a href="#about">• About Us</a></li>
@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </nav>
     </div>
   <p class="font-semibold font-serif text-amber-600 ">The Warm Table— Fort, Mumbai</p>
-  <p class=" text-amber-600 ">2 Hindustan Road, Fort, Mumbai</p>
+  <p class=" text-amber-600 ">12 Hindustan Road, Fort, Mumbai</p>
    <p class=" text-amber-600 ">8 AM - 10 PM, all days</p>
   <p class=" text-amber-600 ">Follow us:</p>
   <div class="flex items-center justify-center gap-2" id="contact">
