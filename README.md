@@ -10,6 +10,20 @@ The Warm Table is a café website I built as a personal web development project.
 
 The website includes a hero section, an interactive menu, information about the café, and a section where visitors can find its location and working hours.
 
+## Screenshots
+
+### Desktop View
+
+![The Warm Table desktop homepage](screenshots/desktop.png)
+
+### Menu
+
+![The Warm Table menu section](screenshots/menu.png)
+
+### Mobile View
+
+![The Warm Table mobile layout](screenshots/mobile.png)
+
 ## Features
 
 - Responsive layout for desktop and mobile screens
