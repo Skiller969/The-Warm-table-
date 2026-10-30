@@ -14,7 +14,7 @@ The website includes a hero section, an interactive menu, information about the 
 
 ### Desktop View
 
-![The Warm Table desktop homepage](screenshots/desktop.png)
+![The Warm Table desktop homepage](screenshots/desktop.jpg)
 
 ### Menu
 
